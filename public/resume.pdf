@@ -1,0 +1,81 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1215 >>
+stream
+BT
+/F1 22 Tf
+50 740 Td
+(Samira Hammouche) Tj
+/F1 14 Tf
+0 -24 Td
+(Full Stack Software Engineer) Tj
+/F2 10 Tf
+0 -18 Td
+(Email: samirahammouche17@gmail.com  |  GitHub: github.com/samirahammouche) Tj
+0 -14 Td
+(LinkedIn: linkedin.com/in/samira-hammouche-74098838b) Tj
+/F1 13 Tf
+0 -30 Td
+(SUMMARY) Tj
+/F2 10 Tf
+0 -16 Td
+(Full-stack software engineer building modern, responsive applications with React, Next.js, Node.js, and TypeScript.) Tj
+/F1 13 Tf
+0 -28 Td
+(EXPERIENCE) Tj
+/F1 11 Tf
+0 -16 Td
+(Web Engineering Intern - Faran Digital Academy) Tj
+/F2 10 Tf
+0 -15 Td
+(- Built and shipped responsive SaaS landing page with semantic HTML and Tailwind CSS.) Tj
+0 -14 Td
+(- Ported architecture to Next.js App Router using reusable server and client components.) Tj
+0 -14 Td
+(- Developed API Data Explorer integrating DummyJSON REST API with dynamic search and data charts.) Tj
+/F1 13 Tf
+0 -28 Td
+(EDUCATION) Tj
+/F1 11 Tf
+0 -16 Td
+(Bachelor of Science in Computer Science - 4th Year) Tj
+/F1 13 Tf
+0 -28 Td
+(TECHNICAL SKILLS) Tj
+/F2 10 Tf
+0 -16 Td
+(Languages & Frameworks: TypeScript, JavaScript, Python, React, Next.js, Flask, FastAPI) Tj
+0 -14 Td
+(Styling & Tools: HTML5, CSS3, Tailwind CSS, SQL, PostgreSQL, Git, Figma) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000257 00000 n 
+0000001524 00000 n 
+0000001599 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1669
+%%EOF

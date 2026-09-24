@@ -1,15 +1,23 @@
 
+export type Project = {
+  title: string;
+  summary: string;
+  stack: string[];
+  image: string;
+  demo: string;
+  code: string;
+};
 export const site = {
   name: "Samira Hammouche",
   role: "Full Stack Software Engineer",
   url: "https://your-portfolio.vercel.app",
-  email: "you@example.com",
+  email:"samirahammouche17@gmail.com",
   github: "https://github.com/samirahammouche",
-  linkedin: "www.linkedin.com/in/samira-hammouche-74098838b",
+  linkedin: "https://www.linkedin.com/in/samira-hammouche-74098838b",
   formspree: "https://formspree.io/f/YOUR_FORM_ID",
   resume: "/resume.pdf", // put your PDF in /public
   description:
-    "Full stack software engineer building fast, accessible applications with React, Next.js, and Node.js. See my projects from the Faran Digital Academy internship.",
+    "Full-stack software engineer building modern, responsive applications with React, Next.js, Node.js, and TypeScript. Explore the projects I built during my Faran Digital Academy internship.",
   about: [
     "I'm a web engineering student who likes turning a Figma file into a fast, accessible interface that works on every screen size.",
     "During my internship at Faran Digital Academy (FDA) I built a responsive landing page, rebuilt it in Next.js with reusable components, and shipped a weather app that talks to a REST API.",

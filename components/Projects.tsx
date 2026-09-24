@@ -1,19 +1,26 @@
 import Image from "next/image";
 import Section from "./Section";
 import Reveal from "./Reveal";
-import { projects } from "../data/site";
+import { projects, type Project } from "../data/site";
 
-function Frame({ p }) {
+function Frame({ p }: { p: Project }) {
   return (
     <div className="overflow-hidden rounded-xl border border-line bg-panel">
       <div className="flex gap-1.5 border-b border-line px-4 py-3" aria-hidden>
         {[0, 1, 2].map((i) => <span key={i} className="h-2.5 w-2.5 rounded-full bg-line" />)}
       </div>
       {p.image ? (
-        <Image src={p.image} alt={`${p.title} screenshot`} width={1280} height={720} className="h-auto w-full" />
+        <Image
+          src={p.image}
+          alt={`${p.title} screenshot`}
+          width={1280}
+          height={720}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 700px"
+          className="h-auto w-full"
+        />
       ) : (
         <div className="grid aspect-video place-items-center px-6 text-center text-sm text-mute">
-          Add a screenshot to /public/projects and set its path in data/site.js
+          Add a screenshot to /public/projects and set its path in data/site.ts
         </div>
       )}
     </div>

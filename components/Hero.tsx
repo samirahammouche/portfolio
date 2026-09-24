@@ -1,7 +1,43 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Reveal from "./Reveal";
 import { site } from "../data/site";
 
 const initials = site.name.split(" ").map((w) => w[0]).join("").slice(0, 2);
+
+function TypedName() {
+  const [visibleName, setVisibleName] = useState("");
+
+  useEffect(() => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    if (reduceMotion.matches) {
+      setVisibleName(site.name);
+      return;
+    }
+
+    let characterIndex = 0;
+    const timer = window.setInterval(() => {
+      characterIndex += 1;
+      setVisibleName(site.name.slice(0, characterIndex));
+
+      if (characterIndex === site.name.length) {
+        window.clearInterval(timer);
+      }
+    }, 90);
+
+    return () => window.clearInterval(timer);
+  }, []);
+
+  return (
+    <>
+      <span aria-hidden="true">{visibleName}</span>
+      <span className="ml-1 inline-block h-[0.85em] w-[0.08em] animate-pulse bg-accent align-[-0.08em]" aria-hidden="true" />
+      <span className="sr-only">{site.name}</span>
+    </>
+  );
+}
 
 export default function Hero() {
   return (
@@ -10,7 +46,9 @@ export default function Hero() {
       <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 md:grid-cols-[1fr_auto]">
         <div>
           <Reveal onLoad delay={0.1}>
-            <h1 className="mt-6 font-display text-[clamp(3rem,9vw,7.5rem)] font-bold leading-[0.95] tracking-tighter">{site.name}</h1>
+            <h1 className="mt-6 font-display text-[clamp(3rem,9vw,7.5rem)] font-bold leading-[0.95] tracking-tighter">
+              <TypedName />
+            </h1>
           </Reveal>
           <Reveal onLoad delay={0.2}>
             <p className="mt-4 font-display text-2xl text-accent md:text-3xl">{site.role}</p>
