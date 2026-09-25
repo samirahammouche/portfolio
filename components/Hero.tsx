@@ -64,7 +64,6 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-fade-4">
-          {/* Swap for <Image src="/avatar.jpg" .../> once you add a photo to /public */}
           <div className="grid h-40 w-40 place-items-center rounded-full border-2 border-accent/60 bg-panel font-display text-5xl font-semibold text-accent md:h-60 md:w-60 md:text-7xl">
             {initials}
           </div>

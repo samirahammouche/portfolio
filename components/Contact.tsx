@@ -14,9 +14,6 @@ export default function Contact() {
     <Section id="contact" title="Get in touch">
       <div className="grid gap-12 md:grid-cols-2">
         <Reveal>
-          <p className="max-w-md text-lg leading-relaxed text-mute">
-            Hiring for an internship or junior frontend role? Send a message and I&apos;ll reply within a couple of days.
-          </p>
           <ul className="mt-8 divide-y divide-line border-y border-line">
             {links.map(([label, href, hint]) => (
               <li key={label}>
