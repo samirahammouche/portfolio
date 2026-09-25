@@ -15,7 +15,7 @@ export const site = {
   github: "https://github.com/samirahammouche",
   linkedin: "https://www.linkedin.com/in/samira-hammouche-74098838b",
   formspree: "https://formspree.io/f/mbglkzqo",
-  resume: "/resume.pdf", // put your PDF in /public
+  resume: "/resume2.pdf", // put your PDF in /public
   description:
     "Full-stack software engineer building modern, responsive applications with React, Next.js, Node.js, and TypeScript. Explore the projects I built during my Faran Digital Academy internship.",
   about: [
@@ -35,7 +35,7 @@ export const projects = [
     summary:
       "A fully responsive SaaS landing page built with semantic HTML, CSS and Tailwind. It turns a Figma design into a layout that holds up on every breakpoint.",
     stack: ["HTML", "Tailwind CSS", "Figma"],
-    image: "/projects/img4.png", 
+    image: "/projects/img4.webp", 
     demo: "https://data-pilot-landing-page-smoky.vercel.app/",
     code: "https://github.com/samirahammouche/DataPilot-landing-page",
   },
@@ -44,7 +44,7 @@ export const projects = [
     summary:
       "The landing page rebuilt with the Next.js App Router and reusable components. Server components and optimized images cut duplicated markup and load time.",
     stack: ["Next.js", "React", "Tailwind CSS"],
-    image: "/projects/img2.png", 
+    image: "/projects/img2.webp", 
     demo: "https://fda-landing-page.vercel.app/",
     code: "https://github.com/samirahammouche/FDA-landing-page",
   },
@@ -53,7 +53,7 @@ export const projects = [
   summary:
     "A data dashboard built with Next.js and the DummyJSON REST API. It fetches data asynchronously, filters it with a live search engine, and turns it into charts to show trends at a glance.",
   stack: ["Next.js", "REST API", "DummyJSON", "Charts"],
-  image: "/projects/img3.png",
+  image: "/projects/img3.webp",
   demo: "https://fda-landing-page.vercel.app/explorer",
   code: "https://github.com/samirahammouche/FDA-landing-page/tree/main/app/explorer",
 },

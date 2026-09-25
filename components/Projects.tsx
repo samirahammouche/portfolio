@@ -10,14 +10,17 @@ function Frame({ p }: { p: Project }) {
         {[0, 1, 2].map((i) => <span key={i} className="h-2.5 w-2.5 rounded-full bg-line" />)}
       </div>
       {p.image ? (
-        <Image
-          src={p.image}
-          alt={`${p.title} screenshot`}
-          width={1280}
-          height={720}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 700px"
-          className="h-auto w-full"
-        />
+        <div className="relative aspect-[16/9] w-full overflow-hidden bg-panel">
+          <Image
+            src={p.image}
+            alt={`${p.title} screenshot`}
+            fill
+            sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1200px) 55vw, 650px"
+            className="object-cover object-top"
+            loading="lazy"
+            quality={80}
+          />
+        </div>
       ) : (
         <div className="grid aspect-video place-items-center px-6 text-center text-sm text-mute">
           Add a screenshot to /public/projects and set its path in data/site.ts
